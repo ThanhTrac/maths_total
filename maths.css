@@ -1,0 +1,248 @@
+body{
+    height:100%;
+    background: radial-gradient(circle, #fff, #ccc);
+  
+}
+#container{
+    height: 450px;
+    width:550px;
+    background-color: #9DD2EA;
+    margin: 100px auto;
+    padding:20px;
+    box-shadow:4px 4px 0 0 #009de4;
+    border-radius: 10px;
+    position: relative;
+}
+#game-board{
+    width:450px;
+    height:310px;
+    color: #fff;
+    background: linear-gradient(hsla(240, 100%, 40%, 0.5), hsla(250, 100%, 50%, 0.5));
+    margin: 50px auto;
+}
+#choice-game{
+    text-align: center;
+    text-shadow: -1px 0px black, 0px 1px black, 1px 0px black, 0px -1px black;
+}
+.choice-game-box{
+    width:100px;
+    text-align: center;  
+    border-radius: 3px;
+    background-color: #2aaabb;
+    padding:6px;
+    margin:20px;
+    cursor: pointer;
+    box-shadow: 0 4px grey;
+    position:relative;
+    transition: all 0.2s;
+}
+
+.choice-game-box:hover{
+    background-color: hsla(320, 100%, 50%, 0.5);
+    box-shadow: 0px 4px hsla(320, 100%, 30%, 0.5);
+}
+.choice-game-box:active{
+    top:4px;
+}
+
+#instruct-game{
+    width:290px;
+    height:208px;
+    background: linear-gradient(to right, hsla(160, 100%, 50%, 0.5), hsla(200, 100%, 50%, 0.5));
+    position:absolute;
+    left:190px;
+    top:137px;
+    border-radius: 6px;
+    overflow:auto;
+    padding: 4px;
+}
+
+#operator{
+    background-color: hsla(120, 100%, 30%, 0.5);
+    color:#fff;
+    text-align: center;
+    border-radius: 5px;
+    position:absolute;
+    left:50px;
+    padding: 5px;
+    text-shadow: -1px 0px blue, 0px 1px blue, 1px 0px blue, 0px -1px blue;
+    box-shadow: 0px 4px hsla(240, 100%, 30%, 0.5);
+    display: none;
+}
+
+#score-box{
+    background-color:#f1ff92;
+    color:blue;
+    padding:10px;
+    position:absolute;
+    left:450px;
+    border-radius: 3px;
+    box-shadow:0px 4px  #9da853;
+    display:none;
+}
+#right{
+    position: absolute;
+    left:250px;
+    padding:10px;
+    background-color: #44ee44;
+    color: #fff;
+    display:none;
+}
+#wrong{
+    position: absolute;
+    left:250px;
+    padding:10px;
+    background-color: #ee5555;
+    color:#fff;
+    display: none;
+}
+#question{
+    width:450px;
+    height:150px;
+    margin: 50px auto 10px auto;
+    background-color: #9da0ea;
+    box-shadow: 0 4px #535aab;
+    font-size: 80px;
+    text-align: center;
+    font-weight: 500;
+    font-family: cursive, sans-serif;
+    display:none;
+}
+#instruction{
+    width: 450px;
+    height:50px;
+    text-align: center;
+    margin: 10px auto 10px auto;
+    line-height: 45px;
+    background-color: #b481d9;
+    box-shadow: 0 4px #8153a8;
+    display:none;
+    
+}
+#choices{
+    width:450px;
+    height:100px;
+    margin: 5px auto;
+    display: none;
+}
+.box{
+    width:85px;
+    height: 85px;
+    border-radius: 3px;
+    background-color: #fff;
+    float: left;  
+    cursor: pointer;
+    box-shadow: 0 4px grey;
+    text-align: center;
+    line-height: 80px;
+    position: relative;
+    -moz-transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+.box:hover, #start-reset:hover{
+    background-color: #9c89f6;
+    color: #fff;
+    -moz-box-shadow: 0 4px #6b54d3;
+    -webkit-box-shadow: 0 4px #6b54d3;
+    box-shadow: 0 4px #6b54d3;
+
+}
+.box:active, #start-reset:active{
+    box-shadow: 0px 0px #6b54d3;
+    -moz-box-shadow: 0 4px #6b54d3;
+    -webkit-box-shadow: 0 4px #6b54d3;
+    top:4px;
+}
+
+#box1, #box2, #box3{
+    margin-right:36px;
+}
+
+#box4{
+    float:right
+}
+
+#back-to-board{
+    width:110px;
+    border-radius: 3px;
+    background-color: rgba(255, 255, 255, 0.5);
+    float:left;
+    padding: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    -moz-box-shadow: 0 4px rgba(0,0,0,0.2);
+    -webkit-box-shadow: 0 4px rgba(0,0,0,0.2);
+    box-shadow: 0 4px rgba(0,0,0,0.2);
+    text-align: center;   
+    position: relative;
+    -moz-transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    transition: all 0.2s;
+    display: none;
+}
+#back-to-board:hover{
+    background-color: hsla(0, 100%, 40%, 0.6);
+    color: #fff;
+    box-shadow: 0px 4px hsla(0, 100%, 20%, 0.7);
+}
+
+#back-to-board:active{
+    box-shadow: 0px 4px hsla(0, 100%, 20%, 0.8);
+    top:4px;
+}
+
+#start-reset{
+    width:110px;
+    border-radius: 3px;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin: 0 auto; 
+    padding: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    -moz-box-shadow: 0 4px rgba(0,0,0,0.2);
+    -webkit-box-shadow: 0 4px rgba(0,0,0,0.2);
+    box-shadow: 0 4px rgba(0,0,0,0.2);
+    text-align: center;   
+    position: relative;
+    -moz-transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    transition: all 0.2s;
+    display:none;
+}
+
+#time-remaining{
+    padding:10px;
+    float:right;
+    font-size: 14px;
+    margin-top:-40px;
+    background-color: hsla(120, 100%, 50%, 0.8);
+    box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+/*    visibility: hidden;*/
+    display:none;
+}
+#game-over{
+    width: 450px;
+    height: 200px;
+    padding-top: 20px;
+    background:linear-gradient(#f3ca6b, #f3706c); 
+    color: #fff;
+    text-align: center;
+    text-transform:uppercase;
+    font-size: 2.5em;
+    position:absolute;
+    top:100px;
+    left:50px;
+    z-index:2;
+    display:none;
+}

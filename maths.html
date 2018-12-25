@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title> Maths Game</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="maths.css">
+  
+</head>
+
+<body>
+    <div id="container">
+        <div id="game-board">
+            <h1 id="choice-game">Maths Game</h1>
+            <div id="adding" class="choice-game-box">Adding</div>
+            <div id="subtracting" class="choice-game-box">Subtracting</div>
+            <div id="multiplying" class="choice-game-box">Multiplying</div>
+            <div id="dividing" class="choice-game-box">Dividing</div>
+            <div id="instruct-game">
+                <h3 class="text-center">Instructions</h3>
+                <p>&#9758; You will be tested your ability in calculating based on adding, subtracting, multiplying, and dividing games within 1 to 10.</p> 
+                <p>&#9758; Each game lasts 1 minute, and you will receive your score when the time is over.</p> 
+                <p>&#9758; For dividing, the choices are presented in two decimals.</p>               
+                <p>&#9758; You can repeat the game many times if you want.</p>
+                <p>&#9758; Click on any button to start playing.</p>
+            </div>
+        </div>
+        <h3 id="operator"></h3>
+       <div id="score-box">
+           Score: <span id="score-value">0</span>
+        </div>
+        <div id="right">Good job</div>
+        <div id="wrong">Oop!Try again</div>
+        <div id="question"></div>
+        <div id="instruction">Click on the correct answer</div>
+        <div id="choices" >
+            <div id="box1" class="box"></div>
+            <div id="box2" class="box"></div>
+            <div id="box3" class="box"></div>
+            <div id="box4" class="box"></div>
+        </div>
+        <div>
+            <div id="back-to-board">Back to Board</div>
+            <div id="start-reset">Start Game</div>
+            <div id="time-remaining">
+                Time remaining: <span id="time-remaining-value"></span> seconds
+            </div>
+            <div id="game-over">
+                <p>Game Over</p>
+                <p>Your Score is </p>
+            </div>
+        </div>
+    </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>  
+<script src="maths.js"></script>
+</body>
+</html>
